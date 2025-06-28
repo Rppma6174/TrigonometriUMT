@@ -420,20 +420,20 @@
             font-size: 14px;
         }
         
-        @media (max-width: 1024px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .sidebar {
-                order: -1;
-            }
-            
-            .progress-card, .related-videos {
-                padding: 20px;
-            }
-        }
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .video-section {
+        order: -1;  /* <-- TAMBAHKAN BARIS INI */
+    }
+    
+    .progress-card, .related-videos {
+        padding: 20px;
+    }
+}
         
         @media (max-width: 768px) {
             .container {
